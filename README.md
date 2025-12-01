@@ -48,7 +48,7 @@ Código central usado para carregar os modelos de IA e fazer a conexão entre o 
 Flask
 Framework utilizado para criar as rotas e permitir a comunicação entre o site e os nossos modelos de IA.
 
-<div align = "center"><img src = "https://github.com/gui-bus/TechIcons/blob/main/Dark/Java.svg" width='200'><br>
+<div align = "center"><img src = "https://github.com/gui-bus/TechIcons/blob/main/Dark/Java.svg" width="200"><br>
 
 Java
 Linguagem usada para realizar a conexão da tela de login com um outro banco de dados.
