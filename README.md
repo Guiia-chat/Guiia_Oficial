@@ -16,18 +16,20 @@ por voz).</p>
 # Tecnologias usadas em nosso Projeto :
 
 **Para o Front End nós usamos :**
-<div align="center"> <img src="https://github.com/user-attachments/assets/3445911c-caa6-460b-8913-1b1beb395b9e" width="200"> <br>
+<div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/HTML.svg" width="200"> <br>
 Html
 Como código base utilizamos o HTML para realizar todo o esqueleto e toda a base para o nosso site. 
 
 
-<div align="center"> <img src="https://github.com/user-attachments/assets/6a84b5dc-8c9b-4790-9bea-493263c3d7e5" width="200"> <br>
+<div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/CSS.svg" width="200"> <br>
 Css
 Para estilizar toda a nossa página utilizamos o CSS responsável por interagir e redimensionar toda a parte visual de nosso site.
+
+<div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Javascript.svg" width="200"> <br>
+Javascript
+Para o funcionamento de todo o nosso site utilizamos o javascript que foi responsável por criar funções e o envio de  formulários.
  
 
- 
- ![JAVASCRIPT](https://github.com/user-attachments/assets/88c3e884-bc23-4af2-97c1-eea3b9a02f2c)Para o funcionamento de todo o nosso site utilizamos o javascript que foi responsável por criar funções e o envio de  formulários.
  <hr>
  <br>
 
