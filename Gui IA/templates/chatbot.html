@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot Gui IA</title>
+</head>
+<body>
+    <div id="geral">
+         
+        
+        <a href="{{url_for('index')}}">
+         <div id="botao-voltar">Inicio   
+    </div>
+       </a>
+    <div id="titulo"><h1>Chat   GUI IA</h1> </div>
+<div id="chat-container"><img src="static/GUIA_IA.png" alt="imagem do chat bot" id="chat-image"></div>
+<div id="restofconte"></div>
+    <h1 id="dúvida" >Olá sou o GUI IA, no que posso ajudar?</h1>
+    <div id="response-container"></div>
+    <img src="static/icons8-clips-96 (1).png" alt="selecionar arquivo" id="attach-icon">
+    <input type="text" id="user-input" placeholder="Digite algo aqui...">
+    <img id="envio" src="static/icons8-send-30.png" onclick="enviarPergunta()">
+    </div>
+    </div>
+
+
+
+<script>
+    const response = document.getElementById("response-container");
+function enviarPergunta() {
+    const userInput = document.getElementById('user-input').value;
+    
+    if (userInput.trim() === '') {
+        alert('Por favor, digite uma pergunta.');
+        return;
+    }
+
+    response.innerText = "Carregando...";
+
+    fetch('/buscar', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ pergunta: userInput })
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('response-container').innerText = data.resposta;
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+    });
+}
+const input = document.getElementById("user-input");
+input.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    enviarPergunta();
+  }
+});
+
+</script>
+
+
+
+</body>
+</html>

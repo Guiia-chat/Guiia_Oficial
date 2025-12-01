@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gui.Ai</title>
+    <link rel="icon" type="image/png" href="/static/LOGO_IA.png">
+    <link rel="stylesheet" href="/static/style_front.css">
+</head>
+
+<body>
+  
+  <div class="botao_login"> 
+  <a href ="{{ url_for('Login') }}">Login</div></a>
+  
+    <div class="chat">
+  <a href="{{ url_for('ajuda_guiia') }}">
+    Chat Ajuda </div></a>
+
+    <header>
+
+    <img src="/static/LOGO_IA.png" alt="logo-gusta" id="gui-logoia" draggable="false">
+    
+    <h1>Seja muito bem vindo!</h1>
+        <a href="{{ url_for('sobre_gui') }}">Sobre <strong>GUI.IA</strong></a>
+        <a href="{{ url_for('sobre_nos') }}">Sobre nós</a>
+        <a href="{{ url_for('chatbot') }}">Usar <strong>GUI.IA</strong></a>
+    
+    </header>
+
+
+
+<footer>    &copy; 2025 GUI IA. Todos os direitos reservados.             </footer>
+
+</body>
+
+
+</html>

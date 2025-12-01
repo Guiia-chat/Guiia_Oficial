@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converse com o Gui IA</title>
+    <link rel="stylesheet" href="/static/Gui_Ia.css">
+</head>
+<body>
+
+    <h1>Converse com o Gui IA</h1>
+    
+ <a href="{{url_for('index')}}">
+         <div id="botao-voltar">Inicio   
+    </div>
+       </a>
+
+    <div class="avatar-container">
+        <img src="/static/GUIA_IA.png" alt="Avatar Gui IA" class="avatar">
+        
+        <div class="speech-bubble bubble-left">
+            "Olá, meu nome é Guilherme."
+        </div>
+        <div class="speech-bubble bubble-right">
+            "Sou assistente de IA e estou aqui para ajudá-lo. Qual a sua dúvida sobre a Apostila?"
+        </div>
+    </div>
+    
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="Digite sua pergunta aqui...">
+        <button id="send-button">Enviar</button>
+    </div>
+
+    <div class="response-container">
+        <h3>Resposta:</h3>
+        <div id="response-area">A resposta da IA aparecerá aqui...</div>
+    </div>
+
+    <script>
+const sendButton = document.getElementById('send-button');
+const userInput = document.getElementById('user-input');
+const responseArea = document.getElementById('response-area');
+const avatarImg = document.querySelector('.avatar'); 
+
+async function askApi() {
+    const question = userInput.value;
+
+    if (!question) {
+        alert("Por favor, digite uma pergunta.");
+        return;
+    }
+    avatarImg.src = "/static/pensando_Gui_IA.png"; 
+    
+    responseArea.innerHTML = '<div class="loading">Gui IA está pensando<span>.</span><span>.</span><span>.</span></div>';
+
+    try {
+        const response = await fetch('http://127.0.0.1:5000/ask', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ "question": question })
+        });
+
+        const data = await response.json();        
+        responseArea.classList.remove('fade-in');
+        void responseArea.offsetWidth; 
+        responseArea.classList.add('fade-in');
+
+        if (data.answer) {
+            responseArea.innerText = data.answer;
+
+            if (data.answer.includes("Desculpe") || data.answer.includes("não encontrei")) {
+                avatarImg.src = '/static/nao-achei_GuiIA.png';
+            } else {
+                avatarImg.src = '/static/sucesso_Gui_IA.png';
+            }
+
+        } else {
+            responseArea.innerText = "Erro: " + (data.error || "Não foi possível obter uma resposta.");
+            avatarImg.src = '/static/erro_Gui_IA.png';
+        }
+
+    } catch (error) {
+        console.error("Erro na comunicação com a API:", error);
+        responseArea.innerText = "Não foi possível conectar ao servidor. Verifique se o back-end (app.py) está rodando.";
+        avatarImg.src = '/static/erro_Gui_IA.png';
+    }
+}
+
+sendButton.addEventListener('click', askApi);
+
+userInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+        askApi();
+    }
+});
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

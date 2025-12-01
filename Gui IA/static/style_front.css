@@ -1,0 +1,123 @@
+* {
+    user-select: none; /* o "*" significa todos os elementos da pagina, o resto serve pra nao deixa o usuario selecionar textos no site */
+    margin:0 auto
+}   
+
+body {
+    background-color: black;
+    text-align: center;
+    margin-top: 200px;
+               
+}
+
+#gui-logoia {
+    color: aliceblue;
+    margin: auto;
+    width: 150px; /* é o tamanho da imagem */
+}
+
+h1 {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+a {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 25px;
+    transition: transform 0.3s ease, color 0.3s ease; /* transition: cria uma transição suave entre dois estados do mesmo elemento. ease = tipo de aceleração: começa devagar, acelera no meio e desacelera no fim */
+    cursor: pointer; /* muda o icone do cursor do mouse quando passar por cima */
+}
+
+a:hover {
+    transform: scale(0.5);
+    animation:  0.5s ease-out forwards;
+    transform: scale(1.3); /* é a transformação espacial do elemento. ex: scale(1) = tamanho normal (100%), scale(1.3) = 130% do tamanho original e sacle(0.5) = redução de 50% */
+    color: aliceblue;
+}
+
+
+p1 {
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: aliceblue;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 850px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chat {
+    margin-left: 1650px;
+    cursor: pointer;
+    
+}
+
+
+
+.botao_login a {
+   font-family: 'Inter', Arial, Helvetica, sans-serif;
+     position: fixed;
+    left: 1650px;
+    top: 33px;
+    display: inline-block;
+    background-color: #ffffff;
+    color:black;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px #000;
+    z-index: 9999;
+    
+}
+
+.botao_login:hover a {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+
+.chat a {
+   font-family: 'Inter', Arial, Helvetica, sans-serif;
+     position: fixed;
+    left: 20px;
+    top: 20px;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px #000;
+    z-index: 9999;
+}
+
+
+.chat:hover a {   
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: gray;
+    color: #fff;
+    margin-top: 362PX;
+}
+    

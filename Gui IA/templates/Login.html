@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/Longin.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="container">
+        <img src="static/olhadinha.png" alt="aquela olhadinha" id="zoinho">
+        <h1>Login</h1>
+        <form action='http://localhost:8080/users/salvar' id="formulario" method="POST" class="needs-validation" >
+            <h2>Cadastro de Usuários</h2><br>
+            <div class="bloco">
+            <label for="name">Usuário:</label>
+            <input type="text" id="username" name="name" required>
+
+            <label for="password">Senha:</label>
+            <input type="text" id="password" name="password" required>
+
+            <button id="envio" type="submit">Entrar</button>
+
+            <div id="resposta"></div>
+            </div>
+        </form>
+    </div>
+<script>
+
+const resposta = document.getElementById('resposta');
+const buton = document.getElementById('envio');
+const form = document.getElementById('formulario');
+var url = form.action;
+console.log(url);
+
+form.addEventListener('submit',async function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Cria um objeto FormData para coletar os dados do formulário
+    const formData = new FormData(form);
+    console.log(formData);
+
+    // Converte os dados do FormData em um objeto JSON
+
+
+
+     const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(formData))
+        });
+    
+
+if (response.ok) {
+    resposta.innerText = 'Usuário cadastrado com sucesso!';
+    resposta.style.color = 'white';
+    resposta.style.fontWeight = 'bold';
+    console.log(response);
+     
+} else {
+    resposta.innerText = 'Erro ao cadastrar usuário.';
+    resposta.style.color = 'red';
+    resposta.style.fontWeight = 'bold';   
+    
+
+}
+    });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', ()=> {
+        const input = document.getElementById('password');
+        input.type = 'password'; // Define o tipo do input como 'password' ao carregar a página, o input continua como texto  só que para o código fica sendo como password pois o banco de dados espera receber o valor como texto
+    })        
+
+
+    
+
+</script>
+
+<a href= "{{ url_for('index') }}">
+    <div class="botao-voltar">Inicio</div>
+</a>
+
+
+    <div id="footer">
+    <footer>
+        &copy; 2025 BitByte Commerce. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>

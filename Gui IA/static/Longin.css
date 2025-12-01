@@ -1,0 +1,111 @@
+* {
+    user-select: none;
+}
+
+body {
+    background-color: black;
+}
+
+#zoinho {
+    height: 350px;
+    border-radius: 10px;
+    margin: 70px auto 0 auto;
+    display: block;
+}
+
+h1 {
+    margin: 0px;
+    margin-bottom: 15px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 50px;
+    color: aliceblue;
+    cursor: text; /* muda o ponteiro pra indicar texto */
+    margin: auto;
+}
+
+input {
+    width: 200px; /* aumenta a área clicável */
+    padding: 8px; /* aumenta a área interna */
+    box-sizing: border-box; /* garante que o padding não quebre o layout */
+
+}
+
+button {
+    font-size: 19px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 5px 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.container {
+    transform: scale(0.5);
+    animation: aparecer 0.9s ease-out forwards;
+}
+
+.bloco {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.botao-voltar {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+     position: fixed;         /* fixa na tela */
+    left: 20px;              /* distancia da borda esquerda */
+    top: 20px;               /* distancia do topo */
+
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px #000;
+    z-index: 9999;           /* garante que fique acima dos elementos */
+}
+
+.botao-voltar:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

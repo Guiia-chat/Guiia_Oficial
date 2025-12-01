@@ -1,0 +1,123 @@
+
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    background-image: linear-gradient(180deg, #000 0%, #000 100%);
+    font-family: 'Inter', Arial, Helvetica, sans-serif; /* Fonte profissional */
+    display: flex;
+    justify-content: center; /* Centraliza tudo horizontalmente */
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#geral {
+    text-align: center; /* Centraliza o conteúdo dentro */
+    width: 100%;
+    max-width: 800px;
+}
+
+#titulo {
+    font-size: 26px;
+    color: aliceblue;
+}
+
+#chat-image {
+    height: 400px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+#dúvida {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+#user-input {
+    color: aliceblue;
+    width: 80%;
+    max-width: 600px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 50px;
+    border: 2px solid #4b4b4b;
+    background-color: #0a0a0a;
+    padding: 10px 20px;
+    outline: none;
+    transition: 0.3s ease;
+    text-align: left; /* deixa o texto dentro centralizado também */
+}
+
+#attach-icon {
+    height: 30px;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    margin-right: 20px;
+    top: 18px; /* desce o botão */
+}
+
+
+#send-button, #envio {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    top: 12px; /* desce o botão */
+}
+
+#response-container {
+    margin: 25px auto;
+    font-size: 20px;
+    color: #c1c1c1;
+    width: 80%;
+    max-width: 650px;
+    border: 2px solid #5c5c5c;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+}
+
+
+
+
+#botao-voltar {
+    position: fixed;         /* fixa na tela */
+    left: 20px;              /* distancia da borda esquerda */
+    top: 20px;               /* distancia do topo */
+
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px #000;
+    z-index: 9999;           /* garante que fique acima dos elementos */
+}
+
+#botao-voltar:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
