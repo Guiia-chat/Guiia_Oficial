@@ -11,5 +11,6 @@ deficiência visual através de formatos de materiais acessíveis (áudio e inte
 por voz).</p>
 
 ![Guiia](https://github.com/Guiia-chat/Guiia_Oficial/blob/main/Gui%20IA/static/GUIA_IA.png)
+* Figura - guiia *
 
 
