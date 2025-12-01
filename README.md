@@ -26,11 +26,15 @@ por voz).</p>
  <br>
 
  **Para o Back End nós usamos :** <br>
-<div align="center">
+<div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Python.svg" width="200"> <br>
 
-<img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Python.svg" alt="Python Logo" width="200" style="margin: 20px;">
+Python
+Código central usado para carregar os modelos de IA e fazer a conexão entre o Front-End e o Back-End.
 
-<img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Flask.svg" alt="Flask Logo" width="200" style="margin: 20px;">
+</div> <br> <div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Flask.svg" width="200"> <br>
+
+Flask
+Framework utilizado para criar as rotas e permitir a comunicação entre o site e os nossos modelos de IA.
 
 </div>
 
