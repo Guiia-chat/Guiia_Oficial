@@ -19,12 +19,12 @@ por voz).</p>
 <div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/HTML.svg" width="200"> <br>
 Html
 Como código base utilizamos o HTML para realizar todo o esqueleto e toda a base para o nosso site. 
-
+<br>
 
 <div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/CSS.svg" width="200"> <br>
 Css
 Para estilizar toda a nossa página utilizamos o CSS responsável por interagir e redimensionar toda a parte visual de nosso site.
-
+<br>
 <div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/Javascript.svg" width="200"> <br>
 Javascript
 Para o funcionamento de todo o nosso site utilizamos o javascript que foi responsável por criar funções e o envio de  formulários.
