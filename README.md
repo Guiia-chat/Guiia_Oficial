@@ -54,6 +54,8 @@ Java
 Linguagem usada para realizar a conexão da tela de login com um outro banco de dados.
 
 </div>
-
+<br>
+**Para a nossa base de dados usamos o Mysql Workbranch :**
+<div align = "center"><img src = "https://github.com/gui-bus/TechIcons/blob/main/Dark/MySQL.svg" width="200"><br>
 
 
