@@ -28,6 +28,7 @@ por voz).</p>
  
   
   <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg">
+  <img width="40" src="https://github.com/tandpfun/skill-icons/blob/main/icons/Flask-Light.svg">
   
   <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Java-Dark.svg">
   
@@ -44,7 +45,7 @@ por voz).</p>
 
 # Tecnologias usadas em nosso Projeto :
 
-**Para o Front End nós usamos :**
+/* **Para o Front End nós usamos :**
 
 <div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/HTML.svg" width="200"> <br>
 
