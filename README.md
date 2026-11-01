@@ -45,7 +45,7 @@ por voz).</p>
 
 # Tecnologias usadas em nosso Projeto :
 
-/* **Para o Front End nós usamos :**
+<!--  **Para o Front End nós usamos :**
 
 <div align="center"> <img src="https://github.com/gui-bus/TechIcons/blob/main/Dark/HTML.svg" width="200"> <br>
 
@@ -91,3 +91,4 @@ Linguagem usada para realizar a conexão da tela de login com um outro banco de 
 <div align = "center"><img src = "https://github.com/gui-bus/TechIcons/blob/main/Dark/MySQL.svg" width="200"><br>
 
 
+-->
