@@ -13,6 +13,36 @@ por voz).</p>
 ![Guiia](https://github.com/Guiia-chat/Guiia_Oficial/blob/main/Gui%20IA/static/GUIA_IA.png)
 **Figura - guiia**
 
+
+
+
+
+<div align="center" style="display: inline_block"><br>
+  <h1>Tools <img height="40" src="https://img.icons8.com/material-outlined/24/maintenance.png"/></h1>
+  
+  <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg">
+  <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg">
+  <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg">
+  <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Bootstrap.svg">
+  <img width="40" src="https://github.com/tandpfun/skill-icons/blob/main/icons/MySQL-Light.svg">
+ 
+  <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg">
+  <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg">
+   <img width="40" src="https://github.com/tandpfun/skill-icons/blob/main/icons/PHP-Dark.svg">                 
+  <img width="40" src="https://github.com/tandpfun/skill-icons/blob/main/icons/React-Light.svg">
+  <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Java-Dark.svg">
+  <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Figma-Dark.svg">
+   <img width="40
+
+
+
+
+
+
+
+
+
+
 # Tecnologias usadas em nosso Projeto :
 
 **Para o Front End nós usamos :**
