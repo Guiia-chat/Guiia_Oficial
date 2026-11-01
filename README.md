@@ -18,7 +18,7 @@ por voz).</p>
 
 
 <div align="center" style="display: inline_block"><br>
-  <h1>Tools <img height="40" src="https://img.icons8.com/material-outlined/24/maintenance.png"/></h1>
+  <h1>Tecnologias usadas em nosso Projeto <img height="40" src="https://img.icons8.com/material-outlined/24/maintenance.png"/></h1>
   
   <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg">
   <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg">
@@ -43,7 +43,7 @@ por voz).</p>
 
 
 
-# Tecnologias usadas em nosso Projeto :
+
 
 <!--  **Para o Front End nós usamos :**
 
