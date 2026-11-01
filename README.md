@@ -32,7 +32,7 @@ por voz).</p>
   
   <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Java-Dark.svg">
   
-   <img width="40
+   
 
 
 
